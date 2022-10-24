@@ -1,0 +1,27 @@
+button {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 40%;
+    margin: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(1, 56, 1);
+    color: yellow;
+}
+
+button:active {
+    background-color: rgb(91, 5, 5);
+}
+
+main {
+    border: 5px dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
