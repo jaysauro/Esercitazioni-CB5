@@ -1,0 +1,10 @@
+h1 {
+    border: dotted 5px;
+    padding: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
