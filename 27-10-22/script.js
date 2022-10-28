@@ -1,7 +1,7 @@
 const dinosaur = {
     name: "Franco",
     bornIn: "Giurassico",
-    isAlive: false,
+    isAlive: false
 }
 console.log(dinosaur);
 console.log(object.keys(dinosaur));
