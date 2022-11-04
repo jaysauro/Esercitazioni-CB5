@@ -1,0 +1,274 @@
+html {
+    background-image: url(.//images/background\ e-commerce\(small\).jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.button_card {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: black;
+    padding: 20px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_card:hover {
+    background: red;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 50px;
+    padding: 10px;
+    font-size: small;
+    list-style-type: none;
+}
+
+h1 {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.768);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.768);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar {
+    background: black;
+    display: flex;
+    justify-items: space-around;
+    position: fixed;
+    width: 100vw;
+}
+
+.a_navbar {
+    text-decoration: none;
+    color: white;
+}
+
+.a_navbar:hover {
+    color: red;
+}
+
+.card p {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.768);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.description_hero {
+    background: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.link_hero {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 23px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.285);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.link_hero:hover {
+    color: red;
+}
+
+.img_hero {
+    width: 90%;
+    margin: 40px 0;
+    border-radius: 50px;
+}
+
+.exp_title {
+    background: black;
+    margin: 20px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.tg_title {
+    background: black;
+}
+
+.full_title {
+    background: black;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.285);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+    padding: 10px;
+    margin-bottom: 30px;
+    color: black;
+    gap: 20px;
+    border-radius: 10px;;
+}
+
+.imgCard {
+    width: 250px;
+}
+
+.gradeCard{
+    background: rgba(34, 34, 34, 0.768);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+.descriptionCard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;  
+}
+
+.exp_title {
+    text-align: center;
+}
+
+.expansion_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.tg_title {
+    text-align: center;
+}
+
+.tg_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full-art_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.expansion_card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    background: black;
+}
+
+.footer_title {
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+@media screen and (min-width: 767px) {
+
+    html {
+        background-size: cover;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .hero {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .section_hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+    .img_hero {
+    max-width: 500px;
+    }
+
+    .card {
+        margin: 20px;;
+    }
+
+    .exp_title {
+        width: min-content;
+    }
+
+    .expansion_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px;
+        ;
+    }
+
+    .tg_title {
+        width: max-content;
+        margin: 20px;
+    }
+
+    .tg_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .full_title {
+        width: max-content;
+        margin: 20px;
+    }
+
+    .full-art_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
