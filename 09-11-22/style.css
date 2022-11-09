@@ -1,0 +1,198 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(251, 251, 213);
+}
+
+.active {
+    position: absolute;
+    top: 10px;
+    color: black;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 10px;
+}
+
+.bg-eletric {
+    background: #FCF7DE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-water {
+    background: #DEF3FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-ground {
+    background: #f4e7da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-rock {
+    background: #d5d5d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-fairy {
+    background: #fceaff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-poison {
+    background: #98d7a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-bug {
+    background: #f8d5a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-dragon {
+    background: #97b3e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-psychic {
+    background: #eaeda1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-flying {
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-fighting {
+    background: #E6E0D4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-normal {
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-fire {
+    background: #FDDFDF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-grass {
+    background: #DEFDE0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-ghost {
+    background: #705898;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.bg-ice {
+    background: #98d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.pokemon_id, .pokemon_type, .pokemon_name {
+    margin-bottom: 0;
+}
+
+.pokemon_image  {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
