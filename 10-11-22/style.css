@@ -1,0 +1,64 @@
+:root {
+    --green: #71f6a8; /*drop-shadow */
+    --shadow: #52ffa94b;
+    --body_color: #1f2632;
+    --card_color: #323a4a;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body {
+    background: var(--body_color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: fit-content;
+    background: var(--card_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+}
+
+#title {
+    margin: 0;
+    color: var(--green);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#card_btn {
+    width: 40px;
+    height: 40px;
+    background: var(--green);
+    border-radius: 100%;
+    border: none;
+    background-image: url("./Immagine\ 2022-11-10\ 151615.png");
+    background-position: center;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 150px;
+}
+
+#card_btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 7px var(--shadow);
+}
+
+#card_btn:active {
+    filter: invert();
+}

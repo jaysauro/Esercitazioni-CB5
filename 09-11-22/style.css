@@ -5,11 +5,11 @@ body {
     background: rgb(251, 251, 213);
 }
 
-.active {
+/*.active {
     position: absolute;
     top: 10px;
     color: black;
-}
+}*/
 
 .card {
     display: flex;

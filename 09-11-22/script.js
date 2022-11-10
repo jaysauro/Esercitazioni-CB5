@@ -1,7 +1,7 @@
 const bodyEl = document.querySelector("body");
 
-const loadingEl = document.createElement("h1");
-loadingEl.textContent = "Pokemon in arrivo..";
+//const loadingEl = document.createElement("h1");
+//loadingEl.textContent = "Pokemon in arrivo..";
 
 const createCard = (value) => {
     const cardEl = document.createElement("div");
@@ -41,7 +41,7 @@ for (let i = 1; i <= 150; i++) {
 }
 
 let request = urlArray.map((url) => {
-    loadingEl.classList.add("active");
+    //loadingEl.classList.add("active");
     return fetch(url) .then((res) => res.json());
 })
 
