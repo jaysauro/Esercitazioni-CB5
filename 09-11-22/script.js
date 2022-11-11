@@ -23,7 +23,7 @@ const createCard = (value) => {
         return id
     }
 
-    imgEl.setAttribute("src", value.sprites.other.dream_world.front_default);
+    imgEl.setAttribute("src", res.sprites.other.dream_world.front_default);
 
     idEl.textContent = "#" + createId(value.id);
     nameEl.textContent = value.name;
