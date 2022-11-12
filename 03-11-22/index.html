@@ -8,61 +8,76 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" type="module"></script>
 </head>
-<body>
-    <audio autoplay="true" loop="true" volume="50">
-        <source src="./images//Pokemon [Gotta Catch Em All] - Giorgio Vanni (Sigla Completa).mp3">
-    </audio>    
+<body>    
     <div class="navbar">
-        <img class="logo" src="./images//logo.jpg">
         <ul>
             <li>
+                <button class="logo" onclick="location.href='#home'"></button>
+            </li>
+            <li class="li_navbar">
                 <a class="a_navbar" href="#espansion">Espansioni</a>
             </li>
-            <li>
+            <li class="li_navbar">
                 <a class="a_navbar" href="#tg">Trainer Gallery</a>
             </li>
-            <li>
+            <li class="li_navbar">
                 <a class="a_navbar" href="#full-art">Full-Art</a>
             </li>
             <li>
                 <a class="a_navbar" href="#contact">Contact</a>
             </li>
         </ul>
+        <audio class="controls_audio" autoplay="true" loop="true" volume="50" controls>
+            <source src="./images//Pokemon [Gotta Catch Em All] - Giorgio Vanni (Sigla Completa).mp3">
+        </audio>
     </div>
-    <div class="hero">
+    <div class="hero" id="home">
         <img class="img_hero" src="./images//image_hero.webp">
         <div class="section_hero">
          <h2 class="description_hero"> Kataku-Tadonomo's Shop </h2>
-         <a class="link_hero" href="https://www.cardmarket.com/it/Pokemon/Users/Kataku-Tadonomo"> <b>Compra le tue carte qui!</b></a>
+         <a class="link_hero" href="https://www.cardmarket.com/it/Pokemon/Users/Kataku-Tadonomo" target="_blank"> <b>Compra le tue carte qui!</b></a>
         </div>
     </div>
     <main>
+        <h1 class="separator" id="espansion" ></h1>
         <h1 class="exp_title">ESPANSIONI</h1>
-     <div class="expansion_section" id="espansion"> 
-        <div class="expansion_cards">            
+     <div class="expansion_section"> 
+        <h2 class="sub_title">Astri lucenti</h2> 
+        <div class="astri_lucenti">           
+        </div>
+        <h2 class="sub_title">Origine Perduta</h2>
+        <div class="origine_perduta">
+        </div>
+        <h2 class="sub_title">Lucentezza Siderale</h2>
+        <div class="lucentezza_siderale">
+        </div>
+        <h2 class="sub_title">Evoluzioni Eteree</h2>
+        <div class="evoluzioni_eteree">
         </div>
      </div>
+     <h1 class="separator" id="tg" ></h1>
      <h1 class="tg_title">TG - Trainer Gallery</h1>
-     <div class="tg_section" id="tg">
+     <div class="tg_section">
         <div class="tg_cards">
 
         </div>
      </div>
+     <h1 class="separator" id="full-art" ></h1>
      <h1 class="full_title">FULL-ART</h1>
-     <div class="full-art_section" id="full-art">
+     <div class="full-art_section">
         <div class="full-art_cards">
         </div>
      </div>
     </main>
     <footer class="contacts" id="contact">
         <h2 class="footer_title"> Contattami!</h2>
-        <ul>
-            <li>📞 +39 334 309 5881</li>
+        <ul class="contact_ul">
+            <li>+39 334 309 5881</li>
             <li>
-                <a class="a_navbar" href="mailto:angelus.striker.axel@live.it">📧 Mandami una Mail!</a>
+                <a class="a_navbar" href="mailto:angelus.striker.axel@live.it">Mandami una Mail!</a>
             </li>
             <li>
-                <a class="a_navbar" href="https://www.facebook.com/alessandro.lupo.14">Contattami su Facebook!</a>
+                <a class="a_navbar" href="https://www.facebook.com/alessandro.lupo.14" target="_blank">Contattami su Facebook!</a>
             </li>
         </ul>
 
