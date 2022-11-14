@@ -10,6 +10,7 @@ const postEl = document.querySelector("p");
 const btnSect = document.querySelector(".buttons");
 const btnNext = document.querySelector(".btn_next");
 const btnPrev = document.querySelector(".btn_prev");
+const loader = document.querySelector(".lds-heart");
 
 
 const createCard = (res) => {
@@ -53,8 +54,12 @@ btnNext.addEventListener("click", () => {
     else btnPrev.disabled = false;
 })
 
-fetch(url)
-.then((res) => res.json())
-.then((res) => createCard(res));
+function createPost (url) {
+    loader.classList.add("active");
+    fetch(url)
+     .then((res) => res.json())
+     .then((res) => createCard(res))
+     .finally(() => loader.classList.remove("active"));
+}
 
-console.log(url);
+bodyEl.append(loader);
