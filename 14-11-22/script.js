@@ -28,7 +28,7 @@ const createCard = (res) => {
 
     btnSect.append(btnPrev, btnNext);
     higherDiv.append(titleEl, idEl)
-    cardEl.append(higherDiv, postEl);
+    cardEl.append(higherDiv, postEl, loader);
     bodyEl.append(cardEl, btnSect);
 }
 
@@ -39,7 +39,7 @@ btnPrev.addEventListener("click", () => {
     .then((res) => res.json())
     .then((res) => createCard(res));
     if (i <=1)
-    btnPrev.disabled = true;
+    btnPrev.disabled = true;node
     btnNext.disabled = false;
     }
 )
@@ -55,11 +55,11 @@ btnNext.addEventListener("click", () => {
 })
 
 function createPost (url) {
-    loader.classList.add("active");
+    loader.classList.toggle("active");
     fetch(url)
      .then((res) => res.json())
      .then((res) => createCard(res))
-     .finally(() => loader.classList.remove("active"));
+     .finally(() => loader.classList.toggle("active"));
 }
 
-bodyEl.append(loader);
+//bodyEl.append(loader);
