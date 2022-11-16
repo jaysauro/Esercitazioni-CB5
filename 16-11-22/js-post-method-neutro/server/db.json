@@ -1,0 +1,24 @@
+{
+  "pokemon": [
+    {
+      "name": "Pikachu",
+      "type": "Eletric",
+      "id": 1
+    },
+    {
+      "name": "Pinuccio",
+      "type": "Padovese",
+      "id": 2
+    },
+    {
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "id": 3
+    },
+    {
+      "name": "Charmender",
+      "type": "Fire",
+      "id": 4
+    }
+  ]
+}

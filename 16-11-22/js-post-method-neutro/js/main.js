@@ -1,6 +1,7 @@
-import {c, q, GET, POST} from './utils.js';
+import {c, q, GET, POST, DELETE} from './utils.js';
 
 const url = "http://localhost:3000/pokemon";
+let i = 1
 
 const form = document.forms.pokemon;
 const element = form.elements;
@@ -25,25 +26,38 @@ form.addEventListener("submit", (e) => {
     })
 })
 
+
+
 const createCard = (res) => {
     const cardEl = c("div");
-    const nameEl = c("h1");
-    const typeEl = c("h2");
+    const idEl = c("h3");
+    const nameEl = c("h2");
+    const typeEl = c("h3");
     const imgEl = c("img");
+    const button = c("button");
 
     cardEl.className = "card";
     nameEl.className = "pokemon_name";
     typeEl.className = "pokemon_type";
+    idEl.className = "pokemon_id";
     imgEl.className = "img";
+    button.className = "card_button";
 
     nameEl.textContent = res.name;
-    typeEl.textContent = res.type;
-    imgEl.setAttribute("src", `https://picsum.photos/200/300/`);
+    typeEl.textContent = "Type:" + res.type;
+    idEl.textContent = res.id + "°";
+    button.textContent = "🚮";
+    i++;
+    imgEl.setAttribute("src", `https://picsum.photos/100/100/?${i}`);
     imgEl.setAttribute("alt", "image");
 
-    cardEl.append(nameEl, typeEl, imgEl);
+    cardEl.append(idEl, nameEl, typeEl, imgEl, button);
     container.append(cardEl);
     bodyEl.append(container);
+
+    button.addEventListener("click", () => {
+        DELETE(url, res.id)
+    })
 
 }
 
