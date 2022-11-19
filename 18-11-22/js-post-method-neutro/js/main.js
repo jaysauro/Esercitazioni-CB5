@@ -11,16 +11,10 @@ const modifyElements = modifyForm.elements;
 
 const ul = q(".pokemonList");
 const bodyEl = q("body");
-const container = q(".pokemon_container");
+let container = q(".pokemon_container");
 const searchBar = q(".search_bar");
 
-//searchBar.addEventListener("input", (e) => {
-    //const searchString = e.target.value
-    //container.replaceChildren();
-
-    //pokemon.filter(res => res.name.includes(searchString))
-    //.map(res => createCard(res))
-//})
+let cards = []
 
 form.addEventListener("submit", (e) => {
     const data = {
@@ -94,4 +88,17 @@ modifyForm.addEventListener("submit", (e) => {
     .catch(e => console.log(e))
 })
 
-window.onload = GET(url).then(res => res.map((res) => createCard(res)))
+GET(url).then(res => {
+    cards = res.map((res) => {
+      createCard(res);
+      return res;
+    })
+})
+
+searchBar.addEventListener("input", (e) => {
+    const searchString = e.target.value
+    container.replaceChildren();
+    
+    container = cards.filter(res => res.name.includes(searchString))
+    .map(res => createCard (res, container))
+})
