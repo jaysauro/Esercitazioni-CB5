@@ -1,11 +1,6 @@
 {
   "pokemon": [
     {
-      "name": "Fra",
-      "type": "Focaccia",
-      "id": 1
-    },
-    {
       "name": "Pinuccio",
       "type": "Padovese",
       "id": 2
@@ -19,6 +14,11 @@
       "name": "Charmender",
       "type": "Fire",
       "id": 4
+    },
+    {
+      "name": "Gaia",
+      "type": "Bellissima",
+      "id": 5
     }
   ]
 }
