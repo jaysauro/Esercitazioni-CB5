@@ -1,0 +1,31 @@
+html {
+  background: rgba(24, 24, 24, 0.986);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.calc_buttons {
+  display: flex;
+  gap: 15px;
+}
