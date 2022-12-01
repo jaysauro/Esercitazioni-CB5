@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "nome": "Tim",
+      "cognome": "Burton",
+      "data_nascita": "25/08/1958",
+      "riconoscimenti": "",
+      "inizio_attivita": "1971",
+      "fine_attivita": "",
+      "in_attivita": true
+    },
+    {
+      "id": 2,
+      "nome": "David",
+      "cognome": "Lynch",
+      "data_nascita": "20/01/1946",
+      "riconoscimenti": "",
+      "inizio_attivita": "1967",
+      "fine_attivita": "",
+      "in_attivita": true
+    },
+    {
+      "id": 3,
+      "nome": "Sofia",
+      "cognome": "Coppola",
+      "data_nascita": "14/05/1971",
+      "riconoscimenti": "",
+      "inizio_attivita": "1996",
+      "fine_attivita": "",
+      "in_attivita": true
+    },
+    {
+      "id": 4,
+      "nome": "Agnès",
+      "cognome": "Varda",
+      "data_nascita": "30/05/1928",
+      "riconoscimenti": "",
+      "inizio_attivita": "1955",
+      "fine_attivita": "",
+      "in_attivita": false
+    }
+  ]
