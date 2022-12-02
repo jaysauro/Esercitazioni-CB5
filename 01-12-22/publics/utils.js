@@ -2,8 +2,6 @@ const ce = (el) => document.createElement(el);
 
 const qs = (el) => document.querySelector(el);
 
-const url = "http://localhost:3000/attori";
-
 const GET = async (url) => {
 	const res = await fetch(url);
 	return await res.json();
