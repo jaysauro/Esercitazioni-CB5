@@ -1,3 +1,5 @@
+import './Button.css';
+
 const buttonVariants = {
     primary: 'redButton',
     secondary: 'greenButton',
@@ -5,10 +7,10 @@ const buttonVariants = {
 }
 
 
-export function Button() {
+export function Button(props) {
     const {
         className = '',
-        children = 'Nessun {children}',
+        children = '',
         variant = 'none',
         ...otherAttributes
     } = props;
