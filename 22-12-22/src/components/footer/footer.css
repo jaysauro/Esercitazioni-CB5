@@ -1,0 +1,10 @@
+.navbar_list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navbar_item {
+    text-decoration: none;
+    color: white;
+}
