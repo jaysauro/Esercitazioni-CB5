@@ -1,0 +1,19 @@
+.navbar_list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar_item {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_item:hover {
+    text-decoration: underline;
+}
+
