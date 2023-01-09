@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+body {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/public/wood.jpg);
+    font-weight: bold;
+}
+
+h1 {
+    background: rgba(251, 217, 143, 0.105);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: rgba(251, 217, 143, 0.105);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input {
+    width: min-content;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background: rgb(251, 217, 143);
+    margin-bottom: 20px;
+}
+
+ul {
+    background-image: url(/public/old-paper.jpg);
+    list-style: none;
+    border-radius: 10px;
+    width: max-content;
+    padding: 20px;
+}
+
+li {
+    margin: 20px;   
+}
+
+span {
+    margin: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: larger;
+    cursor: pointer;
+    padding: 0;
+}
+
+.spanTitle {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+
