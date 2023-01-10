@@ -1,0 +1,61 @@
+body {
+  background-image: url(/public/beer.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+button {
+  background: none;
+  width: fit-content;
+  align-self: center;
+  border-radius: 100%;
+  border: none;
+  box-shadow: 1px 2px 10px 3px white;
+  font-size: xx-large;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(235, 234, 234, 0.842);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: fit-content;
+  margin: 50px;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+.paragraphs {
+  background: rgba(0, 0, 0, 0.217);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+button:hover {
+  background: rgba(245, 245, 245, 0.833);
+  border: none;
+}
+
+@media screen and (min-width: 767px) {
+  
+  body {
+    background-image: url(/public/beer2.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+}  
