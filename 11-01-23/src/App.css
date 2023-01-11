@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.card {
+  background: rgba(37, 37, 37, 0.708);
+  color: white;
+  border-radius: 20px;
+}
+
+button {
+  filter: invert();
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
