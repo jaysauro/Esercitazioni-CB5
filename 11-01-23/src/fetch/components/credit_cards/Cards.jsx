@@ -9,6 +9,8 @@ export function Cards() {
 
     if (error) return `Errore!`;
 
+    if (!data) return '';
+
     return (<section>
         <h2>CREDIT CARDS</h2>
         <h3>{data.credit_card_number}</h3>

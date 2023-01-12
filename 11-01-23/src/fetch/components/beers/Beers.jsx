@@ -9,7 +9,7 @@ export function Beers() {
 
     if (error) return `Errore!`;
 
-    
+    if (!data) return '';
 
     return (<section>
         <h2>BEERS</h2>

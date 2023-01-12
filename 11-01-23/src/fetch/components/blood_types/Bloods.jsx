@@ -9,6 +9,8 @@ export function Bloods() {
 
     if (error) return `Errore!`;
 
+    if (!data) return '';
+
     return (<section>
         <h2>BLOOD TYPES</h2>
         <h3>Type: {data.type}{data.rh_factor}</h3>

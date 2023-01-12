@@ -9,6 +9,8 @@ export function Banks() {
 
     if (error) return `Errore!`;
 
+    if (!data) return '';
+
     return (<section>
         <h2>BANKS</h2>
         <h3>{data.bank_name}</h3>
