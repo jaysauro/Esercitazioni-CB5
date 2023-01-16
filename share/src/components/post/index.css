@@ -1,0 +1,41 @@
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+.Post {
+    background: rgb(41, 49, 51);
+    border-radius: 40px;
+}
+
+.Post img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 1px rgb(174, 255, 0);
+}
+
+.Post__header {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.Post__text {
+    padding: 10px;
+}
+
+.Post__buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.name {
+    font-weight: bold;
+    color: rgb(199, 36, 177);
+}
