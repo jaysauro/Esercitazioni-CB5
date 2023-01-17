@@ -1,26 +1,62 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { POST } from "../../utils/http";
 import "./index.css";
 
 const NewPost = () => {
-  const [messageText, setMessageText] = useState("");
+  const personalName = "Jaysauro";
+  const personalPic = ""
 
-  const onHandleInput = (e) => setMessageText(e.target.value);
+  const [titleText, setTitleText] = useState("");
+  const [messageText, setMessageText] = useState("");
+  const [messagePost, setMessagePost] = useState({});
+
+  const onHandleTitleText = (e) => setTitleText(e.target.value);
+  const onHandleMessageText = (e) => setMessageText(e.target.value);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(messageText);
+    setMessagePost({
+      id: 1,
+      userId: 9,
+      image: personalPic,
+      firstName: personalName,
+      title: titleText,
+      body: messageText,
+    });;
+
   };
+
+  useEffect(() => {
+    if (messagePost.personalName && messagePost.title)
+      POST("posts/add", messagePost);
+  }, [messagePost]);
 
   return (
     <div className="NewPost">
-      <form onSubmit={onSubmit}>
+      <div className="headerNewPost">
+        <button className="btnNewPost">X</button>
+        <h2>Create Post</h2>
+      </div>
+      <div className="titleNewPost">
+        <img className='personalLogo' src='./personalLogo.png' alt='personalLogo'></img>
         <input
-          value={messageText}
-          onChange={onHandleInput}
+          value={titleText}
+          onChange={onHandleTitleText}
           type="text"
-          placeholder="Create new post"
+          placeholder="Title..."
         />
-        <input type="submit" value="+" />
+      </div>
+      <form className="createNewPost" onSubmit={onSubmit}>
+        <textarea 
+          value={messageText}
+          onChange={onHandleMessageText}
+          type="text"
+          placeholder="What do you want to ShAre?">
+        </textarea>
+        <div className="btnSection">
+          <input type="file"></input>
+          <input type="submit"></input>
+        </div>
       </form>
     </div>
   );

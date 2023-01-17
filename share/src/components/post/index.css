@@ -1,4 +1,4 @@
-button {
+.btnPost {
     background: none;
     border: none;
     cursor: pointer;
@@ -9,7 +9,7 @@ button {
 
 .Post {
     background: rgb(41, 49, 51);
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .Post img {
@@ -37,5 +37,7 @@ button {
 
 .name {
     font-weight: bold;
+    font-size: larger;
+    margin: 10px 0;
     color: rgb(199, 36, 177);
 }

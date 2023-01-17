@@ -20,9 +20,9 @@ const Post = ({ data }) => {
         <p>{data.body}</p>
       </div>
       <div className="Post__buttons">
-        <button>💚</button>
-        <button>💬</button>
-        <button>🌍</button>
+        <button className="btnPost">💚</button>
+        <button className="btnPost">💬</button>
+        <button className="btnPost">🌍</button>
       </div>
     </div>
   );

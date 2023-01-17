@@ -1,0 +1,74 @@
+.NewPost {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btnNewPost {
+    background: none;
+    font-weight: bold;
+    font-size: larger;
+    color:rgb(187, 186, 186);
+    cursor: pointer;
+    padding: 0;
+    margin: 5px;
+}
+
+.personalLogo {
+    width: 80px;
+    height: 80px;
+}
+
+.headerNewPost {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.titleNewPost {
+    background: rgb(41, 49, 51);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.titleNewPost input {
+    background: transparent;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(187, 186, 186);
+    outline: none;
+}
+
+.createNewPost {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: rgb(41, 49, 51);
+    border-radius: 20px;
+}
+
+.createNewPost textarea {
+    height: 50vh;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgb(187, 186, 186);
+}
+
+.btnSection {
+    background: rgb(53, 63, 66);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+
+.inputFile {
+    display: none;
+}

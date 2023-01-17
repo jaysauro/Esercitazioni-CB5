@@ -37,4 +37,4 @@ const POST = async (resource, body) => {
   return data;
 };
 
-export { GET };
+export { GET, POST };
