@@ -3,12 +3,16 @@ import { GET } from "../../utils/http";
 import Post from "../post";
 import "./index.css";
 
-const PostsList = () => {
+const PostsList = ({nPost, filterSearch}) => {
   const [msgList, setMsgList] = useState([]);
 
   useEffect(() => {
-    GET("posts").then(({ posts }) => setMsgList(posts));
-  }, []);
+    GET("posts").then(({ posts }) =>
+      nPost === "full"
+        ? setMsgList(posts.filter((post) => post.title.includes(filterSearch)))
+        : setMsgList(posts.filter((post) => post.id <= nPost))
+    );
+  }, [filterSearch]);
 
   return (
     <div className="PostsList">

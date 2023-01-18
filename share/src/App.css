@@ -2,6 +2,7 @@ body {
     margin: 5px;
     background: black;
     color: rgb(187, 186, 186);
+    position: relative;
 }
 
 .header {

@@ -1,17 +1,13 @@
 .NewPost {
+    position: fixed;
+    top: 50px;
+    left: 60px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.btnNewPost {
-    background: none;
-    font-weight: bold;
-    font-size: larger;
-    color:rgb(187, 186, 186);
-    cursor: pointer;
-    padding: 0;
-    margin: 5px;
+    background: rgb(41, 49, 51);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .personalLogo {
@@ -33,33 +29,33 @@
     gap: 20px;
 }
 
-.titleNewPost input {
+.titleNewPost {
     background: transparent;
     border: none;
     font-size: larger;
     font-weight: bold;
     color: rgb(187, 186, 186);
     outline: none;
+    width: 90%;
 }
 
-.createNewPost {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background: rgb(41, 49, 51);
-    border-radius: 20px;
-}
-
-.createNewPost textarea {
-    height: 50vh;
+.messageNewPost {
+    height: 30vh;
     background: transparent;
     border: none;
     outline: none;
     color: rgb(187, 186, 186);
+    width: 90%;
+    padding: 20px;
+    text-align: start;
+}
+
+.textSection {
+    background: rgb(53, 63, 66);
+    border-radius: 20px;
 }
 
 .btnSection {
-    background: rgb(53, 63, 66);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -67,8 +63,8 @@
     border-radius: 15px;
 }
 
-
-
-.inputFile {
-    display: none;
+.btnSection input {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
