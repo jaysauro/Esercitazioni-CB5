@@ -1,20 +1,27 @@
-import { useState } from "react";
-import NewPost from "../newPost";
 import Modal from "../modal/Modal";
+import NewPost from "../newPost";
+import ModalFriend from "../modalFriend/ModalFriend";
 import Button from "../button";
 import "./index.css";
 
-const CommandBar = () => {
-  const [isModalEnabled, setModalEnabled] = useState(false);
-  const onHandleModal = () => setModalEnabled((prev) => !prev);
+const CommandBar = ({setModalEnabled, setModalContent, isModalEnabled, modalContent}) => {
+
+  const onHandleModal = () => {
+    setModalEnabled((prev) => !prev);
+    setModalContent("NewMessage");
+  };
 
   return (
     <div>
       {isModalEnabled && (
-        <Modal>
-          <NewPost/>
-        </Modal>
-      )}
+          <Modal setModalEnabled={setModalEnabled}>
+            {modalContent === "NewMessage" ? (
+              <NewPost setModalEnabled={setModalEnabled} />
+            ) : (
+              <ModalFriend friendId={modalContent} />
+            )}
+          </Modal>
+        )}
     <div className="CommandBar">
       <button>⏏</button>
       <button>🔍</button>

@@ -1,14 +1,19 @@
 .FriendsList {
-    padding: 10px 20px;
+    padding: 10px 0;
     display: flex;
     flex-direction: row;
     gap: 10px;
     overflow-x: scroll;
+  }
+
+  .FriendsList::-webkit-scrollbar {
+    display: none;
   }
   
   @media (min-width: 800px) {
     .FriendsList {
       flex-direction: column;
       gap: 30px;
+      overflow-y: scroll;
     }
   }

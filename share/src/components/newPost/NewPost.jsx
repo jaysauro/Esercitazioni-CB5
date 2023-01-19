@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { POST } from "../../utils/http";
 import "./index.css";
 
-const NewPost = () => {
+const NewPost = ({ setModalEnabled }) => {
   const personalName = "Jaysauro";
   const personalPic = "./personalLogo.png";
 
@@ -23,7 +23,7 @@ const NewPost = () => {
       title: titleText,
       body: messageText,
     });
-
+    setModalEnabled(false);
   };
 
   useEffect(() => {

@@ -8,6 +8,8 @@ import './App.css';
 
 function App() {
     const [filterState, setFilterState] = useState("");
+    const [isModalEnabled, setModalEnabled] = useState(false);
+    const [modalContent, setModalContent] = useState("NewMessage");
 
     return (
         <div className='App'>
@@ -15,9 +17,15 @@ function App() {
                 <img className='logo' src='./logo.png' alt='logo'></img>
                 <FilterBar setFilterState={setFilterState}/>
             </div>
-            <FriendsList/>
-            <PostsList nPost={"full"} filterSearch={filterState}/>
-            <CommandBar/>
+            <div className='centerSection'>
+              <FriendsList setModalContent={setModalContent} setModalEnabled={setModalEnabled}/>
+              <PostsList nPost={"full"} filterSearch={filterState}/>
+            </div>
+            <CommandBar 
+              setModalContent={setModalContent} 
+              setModalEnabled={setModalEnabled} 
+              isModalEnabled={isModalEnabled}
+              modalContent={modalContent}/>
         </div>
     )
 }

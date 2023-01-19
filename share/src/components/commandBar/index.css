@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgb(41, 49, 51);
+    background: rgb(53, 63, 66);
     border-radius: 15px;
     padding: 15px;
 }
@@ -16,7 +16,7 @@
     height: 50px;
     border-radius: 100%;
     border: none;
-    background-color: rgb(53, 63, 66);
+    background-color: rgb(41, 49, 51);
     font-size: larger;
     color: rgb(187, 186, 186);
     cursor: pointer;

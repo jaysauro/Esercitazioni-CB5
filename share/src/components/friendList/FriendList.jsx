@@ -3,18 +3,23 @@ import { GET } from "../../utils/http";
 import Friend from "../friend";
 import "./index.css";
 
-const FriendsList = () => {
+const FriendsList = ({setModalContent, setModalEnabled}) => {
   const [friendsList, setFriendsList] = useState([]);
+  console.log(setModalContent);
 
   useEffect(() => {
-    // GET("users").then(({ users }) => setFriendsList(users));
     GET("users").then((data) => setFriendsList(data.users));
   }, []);
 
   return (
     <div className="FriendsList">
       {friendsList.map((friend) => (
-        <Friend data={friend} key={friend.id} />
+        <Friend 
+          data={friend} 
+          setModalContent={setModalContent}
+          setModalEnabled={setModalEnabled}
+          key={friend.id} 
+          />
       ))}
     </div>
   );
