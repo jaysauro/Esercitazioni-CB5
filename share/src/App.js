@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PostsList from './components/postsList/PostsList';
 import CommandBar from './components/commandBar/CommandBar';
 import FriendsList from './components/friendList';
 import FilterBar from './components/filterBar/filterBar';
+import LogIn from './components/login/Login';
 import './App.css';
 
 
@@ -10,11 +11,17 @@ function App() {
     const [filterState, setFilterState] = useState("");
     const [isModalEnabled, setModalEnabled] = useState(false);
     const [modalContent, setModalContent] = useState("NewMessage");
+    const [user, setUser] = useState();
 
-    return (
+    useEffect(() => {
+        if (localStorage.getItem("username")) {
+          setUser(JSON.parse(localStorage.getItem("username")).username);
+        }
+      }, []);
+
+    return user ? (
         <div className='App'>
             <div className='header'>
-                <img className='logo' src='./logo.png' alt='logo'></img>
                 <FilterBar setFilterState={setFilterState}/>
             </div>
             <div className='centerSection'>
@@ -27,7 +34,11 @@ function App() {
               isModalEnabled={isModalEnabled}
               modalContent={modalContent}/>
         </div>
-    )
+    ) : (
+        <>
+          <LogIn/>
+        </>
+    );
 }
 
 export default App;
