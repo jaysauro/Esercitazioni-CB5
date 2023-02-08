@@ -21,8 +21,8 @@ const Navbar = () => {
 
   return (
     <div className={styles.Navbar}>
-      <h2>COSE DA FARE: </h2>
-      <h3>(by "the Grinch")</h3>
+      <h1>COSE DA FARE: </h1>
+      <h2>(by "the Grinch")</h2>
       <form onSubmit={onFormSubmit}>
         <input
           type="text"

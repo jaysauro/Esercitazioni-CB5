@@ -7,9 +7,8 @@ const TodoItem = ({ data }) => {
 
   const onHandleClick = (e) => {
     dispatch({
-      type: "REMOVE_TODO_FROM_LIST",
+      type: "CHECK_TODO_ITEM",
       payload: data.id,
-      status: data.status,
     });
   };
 

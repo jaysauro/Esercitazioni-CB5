@@ -29,6 +29,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image:url(https://c8.alamy.com/zoomsde/9/2ada7710f4884deea572a2a8d1a910b4/d229yb.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
 h1 {

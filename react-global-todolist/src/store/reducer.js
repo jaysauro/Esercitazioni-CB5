@@ -6,10 +6,12 @@ const mainReducer = (state, action) => {
           ...state,
           todoList: [...state.todoList, action.payload],
         };
-      case "REMOVE_TODO_FROM_LIST":
+      case "CHECK_TODO_ITEM":
         return {
           ...state,
-          todoList: state.todoList.filter((todo) => todo.id !== action.payload),
+          todoList: state.todoList.map((todo) => todo.id === action.payload
+            ? {...todo, status: !todo.status}
+            : todo),
         };
       default:
         return state;
