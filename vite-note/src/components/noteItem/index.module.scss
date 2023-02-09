@@ -1,0 +1,26 @@
+.noteText {
+    background-image: url("/paper.jpg");
+    background-size: cover;
+    margin-top: 18.72px;
+    border-radius: 5px;
+    h3, p {
+        margin: 0 40px;
+    }
+   
+}
+
+.NoteItem {
+    margin: 0 10px;
+
+    button {
+        padding: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: larger;
+    }
+
+    button:hover {
+        transform: scale(1.3);
+    }
+}
